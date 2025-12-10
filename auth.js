@@ -11,7 +11,7 @@ export async function handleSignUp(email, password) {
             email,
             password,
             options: {
-                emailRedirectTo: `${window.location.origin}/index-plain.html`
+                emailRedirectTo: `${window.location.origin}/index.html`
             }
         });
         
