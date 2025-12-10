@@ -44,7 +44,7 @@
         // Check if already authenticated
         checkAuth().then(user => {
             if (user) {
-                window.location.href = 'index-plain.html';
+                window.location.href = 'index.html';
             }
         });
         
@@ -63,7 +63,7 @@
             const result = await handleSignIn(email, password);
             
             if (result.success) {
-                window.location.href = 'index-plain.html';
+                window.location.href = 'index.html';
             } else {
                 errorDiv.textContent = result.error;
                 submitButton.disabled = false;
